@@ -1,7 +1,8 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Hello World!
+When you move the camera out of the cat, the camera stays still and you can see the cat moving around independently.
+This is because the camera is no longer attached to the cat, and the screen will not move along with the cat.
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
