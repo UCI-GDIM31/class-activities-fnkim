@@ -12,6 +12,13 @@ in step 2, the game wouldn't run because there was no semicolon.
 ### W3
 In the visual novel, the parameters would be an int variable which checks the player's friendship level with the character, and a boolean variable that checks the flag of if the player knows the character's secret. The return type would be a string that contains the text response of the NPC.
 
+### W4
+Line 17: _isGrounded is a member variable and its type is bool
+Line 28: it's checking for input (space key) and the boolean type _isGrounded
+Line 32: sets the boolean _isGrounded as false
+
+Table 11
+
 
 ## Open-Source Assets
 ### W1
