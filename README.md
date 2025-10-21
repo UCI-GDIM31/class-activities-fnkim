@@ -13,11 +13,15 @@ in step 2, the game wouldn't run because there was no semicolon.
 In the visual novel, the parameters would be an int variable which checks the player's friendship level with the character, and a boolean variable that checks the flag of if the player knows the character's secret. The return type would be a string that contains the text response of the NPC.
 
 ### W4
+Table 11
+
 Line 17: _isGrounded is a member variable and its type is bool
 Line 28: it's checking for input (space key) and the boolean type _isGrounded
 Line 32: sets the boolean _isGrounded as false
 
-Table 11
+The solution I came up with for the collider activity was to add Rigidbodies to the cat and the ball. This is because these are the objects that need physics in which they collide with things and don't go through them. I checked Is Trigger on the goal, since that is the object that needs to be tested if it is hit, and it needs to be able to be passed through.
+
+My game did not work perfectly the first time I tested it, in regards to the timer text updating. I was updating the variable, but I forgot to add the code to update the text on the screen as well. I fixed this by adding "_timeText.text = _timerNumber.ToString();".
 
 
 ## Open-Source Assets
