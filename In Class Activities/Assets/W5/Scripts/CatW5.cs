@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class CatW5 : MonoBehaviour
@@ -8,6 +9,8 @@ public class CatW5 : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     private string _isWalkingName = "IsWalking";
+
+    [SerializeField] Vector3 translation = Vector3.zero;
 
     private void Update()
     {
@@ -24,7 +27,22 @@ public class CatW5 : MonoBehaviour
         // to change the value of the translation variable,
         // and then call Translate on this GameObject's transform to make it move
         // using translation, _moveSpeed, and Time.deltaTime.
-        //
+
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            translation = Vector3.forward;
+            transform.position += translation * Time.deltaTime;
+
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            translation = Vector3.back;
+            transform.position += translation * Time.deltaTime;
+        }
+
+
+
         // Ask yourself:
         //      Which axis moves the cat forwards and backwards?
         //      Which Vector3 static property would be useful here based on
@@ -43,7 +61,13 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+
+        if (_flipWSControls == true)
+        {
+            translation *= -1;
+        }
+
+        transform.Translate(translation * _moveSpeed * Time.deltaTime);
         
 
 

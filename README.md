@@ -26,6 +26,7 @@ My game did not work perfectly the first time I tested it, in regards to the tim
 ### W5
 My question was about GetComponent, because I was still a little confused on the requirements for retrieving a component from a different gameObject. My question was: Can you use GetComponent on any component? My table and I figured out that yes, you can.
 
+In order to make the deer walk to a certain object, the member variables needed are the target object and the navmesh agent. The method needed is Start() because the deer locks onto the target the component handles making it move towards it.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
