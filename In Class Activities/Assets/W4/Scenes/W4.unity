@@ -6444,7 +6444,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6965,6 +6965,7 @@ GameObject:
   - component: {fileID: 6397291155275392798}
   - component: {fileID: 6397291155275392800}
   - component: {fileID: 6397291155275392799}
+  - component: {fileID: 6397291155275392801}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -7038,7 +7039,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 10
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &6397291155275392800
 CapsuleCollider:
@@ -7063,6 +7064,20 @@ CapsuleCollider:
   m_Height: 0.6536031
   m_Direction: 2
   m_Center: {x: 0.013675854, y: 0.110774115, z: 0.013943434}
+--- !u!114 &6397291155275392801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397291155275392791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d99774276e3f43b192a53df5fde03de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceOffWall
+  _rigidBody: {fileID: 6397291155275392799}
+  _bounceForce: 6
 --- !u!1 &6499904795538962815
 GameObject:
   m_ObjectHideFlags: 0
@@ -7331,6 +7346,7 @@ GameObject:
   - component: {fileID: 8101201615804560248}
   - component: {fileID: 8101201615804560250}
   - component: {fileID: 8101201615804560249}
+  - component: {fileID: 8101201615804560251}
   m_Layer: 0
   m_Name: SoccerBall
   m_TagString: Ball
@@ -7442,7 +7458,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 10
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!135 &8101201615804560250
 SphereCollider:
@@ -7459,12 +7475,26 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.07068241
   m_Center: {x: -0.000056624413, y: 0.00011789426, z: 0.00046431273}
+--- !u!114 &8101201615804560251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741058300408910497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d99774276e3f43b192a53df5fde03de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceOffWall
+  _rigidBody: {fileID: 8101201615804560249}
+  _bounceForce: 6
 --- !u!4 &8115783459852817865
 Transform:
   m_ObjectHideFlags: 0
