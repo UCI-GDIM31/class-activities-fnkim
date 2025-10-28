@@ -23,6 +23,8 @@ The solution I came up with for the collider activity was to add Rigidbodies to 
 
 My game did not work perfectly the first time I tested it, in regards to the timer text updating. I was updating the variable, but I forgot to add the code to update the text on the screen as well. I fixed this by adding "_timeText.text = _timerNumber.ToString();".
 
+### W5
+My question was about GetComponent, because I was still a little confused on the requirements for retrieving a component from a different gameObject. My question was: Can you use GetComponent on any component? My table and I figured out that yes, you can.
 
 ## Open-Source Assets
 ### W1
