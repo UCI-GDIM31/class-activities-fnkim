@@ -27,6 +27,14 @@ My game did not work perfectly the first time I tested it, in regards to the tim
 My question was about GetComponent, because I was still a little confused on the requirements for retrieving a component from a different gameObject. My question was: Can you use GetComponent on any component? My table and I figured out that yes, you can.
 
 In order to make the deer walk to a certain object, the member variables needed are the target object and the navmesh agent. The method needed is Start() because the deer locks onto the target the component handles making it move towards it.
+
+### W6
+My category was Unity Coding and this is the link: https://docs.google.com/document/d/1jGkW1Q2xP_713KL3rIzM0yPQ_F7CGMHJ1AHQlTPs5pg/edit?tab=t.0
+
+There should be a bool member variable to check if the bats are chasing the players or not. The methods used should be Start() and Update(). This will make sure the bats start chasing the player as soon as the game starts and constantly updates the distance from the player and how close it needs to get.
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
