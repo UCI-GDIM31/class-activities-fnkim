@@ -31,8 +31,14 @@ In order to make the deer walk to a certain object, the member variables needed 
 ### W6
 My category was Unity Coding and this is the link: https://docs.google.com/document/d/1jGkW1Q2xP_713KL3rIzM0yPQ_F7CGMHJ1AHQlTPs5pg/edit?tab=t.0
 
-There should be a bool member variable to check if the bats are chasing the players or not. The methods used should be Start() and Update(). This will make sure the bats start chasing the player as soon as the game starts and constantly updates the distance from the player and how close it needs to get.
+There should be a void member variable to enable and disable if the bats are chasing the players or not. The methods used should be Start() and Update(). This will make sure the bats start chasing the player as soon as the game starts and constantly updates the distance from the player and how close it needs to get.
 
+### W7
+
+Link to doc: https://docs.google.com/document/d/1tP76vpdvqVFgg7NrHrj0tOCw1tf_d0Ft6UOzOWAW50Q/edit?usp=sharing
+My role was working on the UI stuff and the Animator stuff.
+
+The issue with step 2 was that it originally used world space in order to calculate the movement rather than local space. I changed it to use transform.forward instead, so that it would use local space.
 
 
 ## Open-Source Assets
